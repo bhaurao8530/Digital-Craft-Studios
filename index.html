@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Digital Craft Studio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .d-block {
+        width: 100%;
+        height: 640px;
+    }
+
+    .navbar {
+        background-color: rgba(192, 89, 78, 0.614);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    footer {
+        background-color: rgb(230, 229, 229);
+        margin-top: 50px;
+        padding: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #fb {
+        width: 30px;
+    }
+
+    #tt {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    #in {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    #gg {
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    #ft {
+        text-align: center;
+    }
+
+    #ft1 {
+        text-align: center;
+    }
+
+    #ft2 {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .head {
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .nav-link:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 1px;
+    }
+
+    #img0 {
+        width: 100px;
+        margin-left: 130px;
+    }
+
+    #img {
+        width: 500px;
+        height: 550px;
+        padding: 60px;
+        margin-left: 150px;
+    }
+
+    .head2 {
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .para {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #col0 {
+        padding: 100px;
+        margin-left: -100px;
+        margin-top: 50px;
+    }
+
+    #about {
+        background-color: rgba(192, 89, 78, 0.614);
+    }
+
+    #row2 {
+        margin-top: 20px;
+    }
+
+    #img5 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #img6 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #img7 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #img8 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #row3 {
+        margin-top: 10px;
+    }
+
+    #img9 {
+        width: 100%;
+
+    }
+
+    #img10 {
+        width: 100%;
+    }
+
+    #img12 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #first {
+        background-color: rgba(201, 189, 187, 0.614);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #test {
+        background-color: rgba(201, 189, 187, 0.614);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .head1 {
+        font-size: 60px;
+        color: rgb(8, 7, 9);
+        margin-left: 120px;
+        padding-top: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #img29 {
+        width: 1500px;
+        height: 500px;
+    }
+
+    #inside {
+        margin-top: -380px;
+    }
+
+    #row10 {
+        margin-bottom: 140px;
+    }
+
+    #out {
+        background-color: rgba(0, 0, 0, 0.688);
+        width: 360px;
+        height: 250px;
+        margin-left: 120px;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    #out1 {
+        background-color: rgba(0, 0, 0, 0.688);
+        width: 360px;
+        height: 250px;
+        margin-left: 100px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #out2 {
+        background-color: rgba(0, 0, 0, 0.688);
+        width: 360px;
+        height: 250px;
+        margin-left: 90px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mid {
+        font-size: 20px;
+        color: peru;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .last {
+        color: whitesmoke;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    @media (min-width:375px) and (max-width:597px) {
+
+        .d-block {
+            height: 250px;
+        }
+
+        .nav-link:hover {
+            border-bottom: 2px solid white;
+            padding-bottom: 1px;
+        }
+
+        #img0 {
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        #img {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            margin-left: 1px;
+            margin-top: 10px;
+
+        }
+
+        .head2 {
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .para {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #col0 {
+            padding: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        #img5 {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+        #img6 {
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+        }
+
+        #img7 {
+            width: 100%;
+            height: 100%;
+            margin-top: 30px;
+        }
+
+        #img8 {
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+        }
+
+        #img9 {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        #img10 {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #img12 {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+
+        .head1 {
+            font-size: 50px;
+            color: rgb(8, 7, 9);
+            margin-left: 20px;
+            padding-top: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #img29 {
+            width: 355px;
+            height: 1200px;
+            margin-bottom: 20px;
+        }
+
+        #inside {
+            margin-top: -1200px;
+        }
+
+        #out {
+            background-color: rgba(0, 0, 0, 0.688);
+            width: 300px;
+            height: 250px;
+            margin-left: 40px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        #out1 {
+            background-color: rgba(0, 0, 0, 0.688);
+            width: 300px;
+            height: 250px;
+            margin-left: 40px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        #out2 {
+            background-color: rgba(0, 0, 0, 0.688);
+            width: 300px;
+            height: 250px;
+            margin-left: 40px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        
+        .mid {
+            font-size: 20px;
+            color: peru;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .last {
+            color: whitesmoke;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+
+        .d-block {
+            height: 450px;
+        }
+
+        .nav-link:hover {
+            border-bottom: 2px solid white;
+            padding-bottom: 1px;
+        }
+
+        #img0 {
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        #img {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+
+        }
+
+        .head2 {
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .para {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #col0 {
+            padding: 10px;
+            margin-left: -10px;
+            margin-top: 60px;
+        }
+
+        #img5 {
+            width: 100%;
+            height: 100%;
+            margin-top: 5px;
+        }
+
+        #img6 {
+            width: 100%;
+            height: 100%;
+            margin-top: 5px;
+        }
+
+        #img7 {
+            width: 100%;
+            height: 100%;
+            margin-top: 5px;
+        }
+
+        #img8 {
+            width: 100%;
+            height: 100%;
+            margin-top: 5px;
+        }
+
+        #img9 {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+        #img10 {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+        #img12 {
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+        #img29 {
+            width: 755px;
+            height: 1250px;
+            margin-bottom: 20px;
+        }
+
+        #first {
+            margin-top: 200px;
+        }
+
+        #inside {
+            margin-top: -1200px;
+        }
+
+        #out {
+            background-color: rgba(0, 0, 0, 0.688);
+            width: 550px;
+            height: 230px;
+            margin-left: 110px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        #out1 {
+            background-color: rgba(0, 0, 0, 0.688);
+            width: 550px;
+            height: 230px;
+            margin-left: 110px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        #out2 {
+            background-color: rgba(0, 0, 0, 0.688);
+            width: 550px;
+            height: 230px;
+            margin-left: 110px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        .mid {
+            font-size: 20px;
+            color: peru;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .last {
+            color: whitesmoke;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <img src="assets/logo.avif" alt="img" id="img0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="text-end me-5 ms-auto navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="testimonal.html">TESTIMONIALS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="team.html">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="contactus.html"> CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" class="img-fluid">
+                    <img src="assets/index1.jpg" alt="" class="d-block">
+                </div>
+                <div class="carousel-item" class="img-fluid">
+                    <img src="assets/index3.jpg" alt="" class="d-block">
+                </div>
+                <div class="carousel-item" class="img-fluid">
+                    <img src="assets/index2.jpg" alt="" class="d-block">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row" id="about">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="assets/aboutus.avif" alt="about us" id="img">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12" id="col0">
+                <p class="head2"><b>About Us</b></p>
+                <p class="para"> We are digitalcraftStudio, a team of creative professionals specializing in
+                    wedding,
+                    fashion, and
+                    commercial photography. With our unique blend of artistic vision and technical expertise, we
+                    capture
+                    the essence of every moment and bring your vision to life. Trust us to create stunning visuals
+                    that
+                    will leave a lasting impression.
+                </p>
+            </div>
+        </div>
+        
+
+
+        <div class="row" id="test">
+            <div class="col-lg-12 col-md-12 col-12">
+                <p class="head1"> <strong> Testimonials</strong></p>
+            </div>
+        </div>
+        <div class="row" id="row10">
+            <div class="col-lg-12 col-md-12 col-12" id="col11">
+                <img src="assets/task10_29.jpg" alt="" id="img29">
+                <div class="row" id="inside">
+                    <div class="col-lg-4 col-md-12 col-12" id="out2">
+                        <p class="mid"> PRASAD NUTRIMENTS <br></p>
+                        <p class="last"> "I dealt with Digitalcrafts.in and found the services very prompt and
+                            proactive. The website they have built for me is fantastic. The customer service is amazing
+                            and any queries are dealt with high priority."</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12" id="out">
+                        <p class="mid"> LEAN WISDOM <br></p>
+                        <p class="last">
+                            "We engaged them for digital marketing audit & consulting. The exercise came out to be
+                            extremely helpful in transforming our digital presence & knowledge transfer to our inhouse
+                            team."
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12" id="out1">
+                        <p class="mid"> WAY2WEALTH <br></p>
+                        <p class="last">
+                            DigitalCrafts offered customer-centric branding solutions in a cost-effective way. For any
+                            assistance or consultancy regarding corporate branding, Digitalcrafts is highly recommended.
+                            They have a highly-trained support team.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="row" id="first">
+            <div class="col-lg-12 col-md-12 col-12">
+                <p class="head1"> <strong> Our Gallery </strong></p>
+            </div>
+        </div>
+        <div class="row" id="row2">
+            <div class="col-lg-3 col-md-3 col-12">
+                <img src="assets/img6.avif" alt="" id="img5">
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <img src="assets/img5.avif" alt="" id="img6">
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <img src="assets/img7.avif" alt="" id="img7">
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <img src="assets/img8.avif" alt="" id="img8">
+            </div>
+        </div>
+        <div class="row" id="row3">
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="assets/img9.avif" alt="" id="img9">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="assets/img10.avif" alt="" id="img10">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="assets/img12.avif" alt="" id="img12">
+            </div>
+        </div>
+
+
+        <footer class="bg-gray text-center text-sm-start text-dark">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12" id="ft">
+                    <p class="head"> <b>Our Office</b></p>
+                    <p>Digital Craft Studio,<br>
+                        Lohegaon Pune 411047,India
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" id="ft1">
+                    <p class="head"> <b>Hours</b></p>
+                    <p>Monday-Friday <br>
+                        9:30AM - 9:30PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" id="ft1">
+                    <p class="head"> <b>contact details</b></p>
+                    <p>Email: avantikaingle91@gmail.com <br>
+                        Phone no. 8767038649</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" id="ft2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="assets/facebook.png" alt="Facebook" id="fb">
+                            <img src="assets/twitter.png" alt="Twitter" id="tt">
+                            <img src="assets/instagram.png" alt="Instagram" id="in">
+                            <a href="https://maps.app.goo.gl/WEW77rTonZncHMhx5">
+                                <img src="assets/google-plus.png" alt="google-plus" id="gg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
